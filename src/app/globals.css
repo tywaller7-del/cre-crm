@@ -128,3 +128,15 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .form-input {
+    @apply w-full h-9 px-3 rounded-md border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring;
+  }
+  textarea.form-input {
+    @apply h-auto py-2;
+  }
+  select.form-input {
+    @apply appearance-none cursor-pointer;
+  }
+}
